@@ -4,7 +4,7 @@
 #
 Name     : perl-Devel-ArgNames
 Version  : 0.03
-Release  : 2
+Release  : 3
 URL      : https://cpan.metacpan.org/authors/id/N/NU/NUFFIN/Devel-ArgNames-0.03.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/N/NU/NUFFIN/Devel-ArgNames-0.03.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libd/libdevel-argnames-perl/libdevel-argnames-perl_0.03-2.debian.tar.xz
