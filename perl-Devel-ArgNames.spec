@@ -4,7 +4,7 @@
 #
 Name     : perl-Devel-ArgNames
 Version  : 0.03
-Release  : 11
+Release  : 12
 URL      : https://cpan.metacpan.org/authors/id/N/NU/NUFFIN/Devel-ArgNames-0.03.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/N/NU/NUFFIN/Devel-ArgNames-0.03.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libd/libdevel-argnames-perl/libdevel-argnames-perl_0.03-2.debian.tar.xz
@@ -77,7 +77,7 @@ make TEST_VERBOSE=1 test
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-Devel-ArgNames
-cp %{_builddir}/Devel-ArgNames-0.03/deblicense/copyright %{buildroot}/usr/share/package-licenses/perl-Devel-ArgNames/1b827b04fc2f893e2ae0c698fb5ca1c544d3ffba
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-Devel-ArgNames/1b827b04fc2f893e2ae0c698fb5ca1c544d3ffba
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -101,4 +101,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/Devel/ArgNames.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Devel/ArgNames.pm
